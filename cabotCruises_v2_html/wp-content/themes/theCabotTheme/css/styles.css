@@ -1,0 +1,777 @@
+#titleFont {
+  font-family: 'Montserrat', sans-serif;
+}
+#paraFont {
+  font-family: 'Piazzolla', serif;
+}
+#open {
+  display: block;
+  transform: translateY(0%);
+  transition: all 1s ease-in-out;
+  z-index: 100;
+  height: 100vh;
+}
+#close {
+  display: none;
+  transform: translateY(-100%);
+  transition: transform 1s ease-in-out, visibility 0s 0.4s;
+  transition: all 1s ease-in-out;
+}
+#links {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+}
+#blogBackground {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: linear 0.2s;
+}
+#gridIt {
+  display: grid;
+  gap: 5px;
+}
+#button1 {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFD700;
+  outline: black !important;
+  border: 4px solid black;
+}
+#button2 {
+  background-color: #FFD700;
+  padding: 0.28rem 0.2rem;
+  outline: black !important;
+  border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
+}
+#button3 {
+  background-color: #FFD700;
+  outline: black !important;
+  border-radius: 15px;
+}
+html {
+  margin: 0;
+}
+body,
+footer {
+  margin: 0 auto;
+}
+.pageContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0.2rem;
+}
+.padding {
+  padding: 0.25rem;
+}
+.slogan {
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.readMore {
+  background-color: #FFD700;
+  padding: 0.28rem 0.2rem;
+  outline: black !important;
+  border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  color: black;
+  margin: 0.35rem;
+  padding: 0.2rem;
+  font-size: smaller;
+  float: right;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'Piazzolla', serif;
+}
+#container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#container h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 0.4rem !important;
+}
+#headerWrapper {
+  width: 100% !important;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+header {
+  display: grid;
+  grid-template-areas: "mainMenu" "theLogo";
+}
+.opened {
+  display: block !important;
+  transition: all 1s ease-in-out;
+  z-index: 100;
+  height: 100vh;
+}
+.closed {
+  transition: transform 1s ease-in-out, visibility 0s 0.4s;
+  transition: all 1s ease-in-out;
+}
+.open {
+  display: block !important;
+}
+.close {
+  display: none !important;
+}
+#menuIcon {
+  grid-area: theIcon;
+  font-size: 2rem;
+}
+.logo {
+  grid-area: theLogo;
+  margin: 1rem auto;
+  max-width: 1200px !important;
+}
+.logo img {
+  max-width: 250px;
+}
+#numberDiv {
+  display: none;
+}
+.slideImageDiv {
+  margin: 0 auto;
+}
+.slideImageDiv img {
+  width: 100%;
+}
+.sub-menu {
+  display: none;
+  background-color: rgba(255, 232, 102, 0.75294118);
+}
+.mainMenu {
+  grid-area: mainMenu;
+  border: 4px solid black;
+  border-left: none;
+  border-right: none;
+  background-color: #FFD700;
+}
+.mainMenu .aContainer {
+  display: grid;
+  padding: 0.3rem 0.5rem 0 0.5rem;
+  margin: 0 auto;
+  background-color: #FFD700;
+  justify-content: space-between;
+  grid-area: theMenu;
+  grid-template-areas: "theIcon theSearch";
+}
+.mainMenu #searchDiv {
+  padding: 0.2rem;
+}
+.mainMenu #searchDiv #searchBox {
+  padding: 0.3rem 0.2rem;
+  border: 3.5px solid black;
+}
+.mainMenu #searchDiv button {
+  background-color: #FFD700;
+  padding: 0.28rem 0.2rem;
+  outline: black !important;
+  border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
+}
+.mainMenu .menuLinks {
+  padding: 0;
+  display: none;
+  text-align: center;
+  margin: 2.45rem 0 0 -0.5rem;
+  position: absolute;
+  width: 100vw;
+  background-color: #ffd900c0;
+  grid-area: theLinks;
+}
+.mainMenu .menuLinks ul {
+  padding: 0;
+}
+.mainMenu .menuLinks li {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  font-family: 'Piazzolla', serif;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.mainMenu .menuLinks li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 0.5rem 0;
+}
+.mainMenu #searchDiv {
+  grid-area: theSearch;
+}
+.blogsDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 0;
+  margin: 20px 10px;
+}
+.blogsDiv .blogTitle {
+  padding: 0.2rem 0;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.blogsDiv a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+}
+.blogsDiv .blog1 {
+  background-image: url("../assets/images/blog1Dim.png");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: linear 0.2s;
+}
+.blogsDiv .blog1:hover {
+  background-image: url("../assets/images/blog1Full.jpg");
+  transition: linear 0.2s;
+}
+.blogsDiv .blog2 {
+  background-image: url("../assets/images/blog2Dim.png");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: linear 0.2s;
+}
+.blogsDiv .blog2:hover {
+  background-image: url("../assets/images/blog2Full.jpg");
+  transition: linear 0.2s;
+}
+.blogsDiv .blog3 {
+  background-image: url("../assets/images/blog3Dim.png");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: linear 0.2s;
+}
+.blogsDiv .blog3:hover {
+  background-image: url("../assets/images/blog3Full.jpg");
+  transition: linear 0.2s;
+}
+.blogsDiv .blog4 {
+  background-image: url("../assets/images/blog4Dim.png");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: linear 0.2s;
+}
+.blogsDiv .blog4:hover {
+  background-image: url("../assets/images/blog4Full.jpg");
+  transition: linear 0.2s;
+}
+.aBlog {
+  height: 46vw;
+  width: 46vw;
+  text-align: center;
+  position: relative;
+}
+.dateDiv {
+  padding: 0.2rem 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  color: #f4f4f4;
+  position: absolute;
+  bottom: 0;
+  width: 46vw;
+}
+footer {
+  max-width: 1200px;
+}
+#footerWrapper {
+  width: 100% !important;
+  margin: 0;
+  padding-left: 0.2rem;
+  background-color: #f4f4f4;
+}
+#footerWrapper a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+#footerWrapper p {
+  margin: 0.1rem 0;
+}
+#footerWrapper h2 {
+  margin-bottom: 0;
+}
+.spacer {
+  opacity: 0;
+}
+.contact {
+  grid-area: contact;
+}
+.newsletter {
+  grid-area: newsletter;
+}
+.newsletter button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFD700;
+  outline: black !important;
+  border: 4px solid black;
+  width: 98%;
+}
+.newsletter input {
+  width: 50%;
+  font-size: 2rem;
+  width: 95.5%;
+  margin: 0.75rem 0;
+}
+.whyCabot {
+  grid-area: why;
+}
+.social {
+  text-align: center;
+  background-color: #FFD700;
+  padding: 1rem;
+  border: 4px solid black;
+  border-left: none;
+  border-right: none;
+}
+.social .socialIcon {
+  font-size: 2rem;
+}
+.social .socialIcon:hover {
+  color: #f2f2f2;
+}
+.social .socialWrapper {
+  background-color: #FFD700;
+  border: 4px solid black;
+  border-left: none;
+  border-right: none;
+}
+.copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0.1rem 0 1rem 0;
+}
+.copyright a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+}
+.activeLink,
+li.current-menu-item a,
+li.current-menu-parent {
+  font-style: italic;
+  background: linear-gradient(to bottom, rgba(254, 255, 255, 0) 4%, rgba(244, 244, 244, 0.35) 20%, rgba(255, 217, 0, 0.63) 33%, rgba(244, 244, 244, 0.85) 43%, #f4f4f4 50%, rgba(244, 244, 244, 0.8) 59%, rgba(255, 217, 0, 0.65) 66%, rgba(244, 244, 244, 0.37) 79%, rgba(160, 216, 239, 0.02) 95%, rgba(160, 216, 239, 0) 96%);
+}
+@media screen and (min-width: 700px) {
+  header {
+    display: grid;
+    grid-template-areas: "theLogo" "mainMenu";
+  }
+  #menuIcon {
+    display: none;
+  }
+  .logo {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0.2rem auto;
+  }
+  .logoBox {
+    padding-left: 1rem;
+  }
+  .pageContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0.2rem;
+  }
+  #numberDiv {
+    display: block;
+  }
+  #numberDiv p {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+  }
+  .mainMenu {
+    background-color: #FFD700;
+  }
+  .mainMenu .aContainer {
+    grid-template-areas: "theLinks theSearch";
+    margin-bottom: 0;
+    max-width: 1200px;
+    padding: 0 0.5rem;
+  }
+  .mainMenu #searchDiv {
+    padding-right: 12px;
+  }
+  .mainMenu #searchDiv button {
+    padding: 0.28rem 0.2rem;
+    margin-top: 0 !important;
+  }
+  .mainMenu .menuLinks {
+    display: block;
+    background-color: #FFD700;
+    margin: 0;
+    position: relative;
+    width: inherit;
+  }
+  .mainMenu .menuLinks li {
+    font-size: 0.7rem !important;
+  }
+  .mainMenu .menuLinks .sub-menu {
+    display: none;
+    position: absolute;
+    padding: 0.25rem;
+    margin-top: 1.13rem;
+    margin-left: -0.5rem;
+    text-align: left;
+    z-index: 100;
+    background-color: #FFD700;
+    border: 4px solid black;
+    border-top: #FFD700;
+  }
+  .mainMenu .menuLinks .sub-menu li {
+    padding: 0.5rem 0;
+  }
+  .mainMenu .menuLinks .sub-menu a {
+    padding: 0;
+    font-size: 0.7rem;
+  }
+  .mainMenu .menuLinks ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0.2rem;
+  }
+  .mainMenu .menuLinks li {
+    padding-right: 0.5rem;
+    line-height: 0;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .blogsDiv {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .blogsDiv a {
+    font-size: 1rem;
+  }
+  .aBlog {
+    width: 32vw;
+    height: 32vw;
+  }
+  .dateDiv {
+    width: 32vw;
+  }
+  .social .socialIcon {
+    font-size: 4rem;
+  }
+  .aboutUsGrid {
+    display: grid;
+    gap: 2px;
+    grid-template-areas: "why newsletter" "why contact";
+  }
+}
+@media screen and (min-width: 1000px) {
+  .blogsDiv {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .mainMenu .menuLinks li {
+    font-size: 1rem !important;
+  }
+  .aBlog {
+    width: 22vw;
+    height: 22vw;
+    max-height: 290px;
+    max-width: 290px;
+  }
+  .dateDiv {
+    width: 22vw;
+    max-width: 290px;
+  }
+  .aboutUsGrid {
+    gap: 10px;
+    grid-template-areas: "why newsletter contact";
+  }
+}
+@media screen and (min-width: 1220px) {
+  #searchDiv,
+  #numberDiv a {
+    right: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.pageTitle {
+  font-family: 'Montserrat', sans-serif;
+}
+.gridContainer {
+  display: grid;
+  gap: 5px;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cruiseGrid {
+  display: grid;
+  gap: 5px;
+  grid-template-areas: "theImage" "theText" "theButton";
+}
+.cruiseImage {
+  grid-area: theImage;
+}
+.cruiseImage img {
+  max-width: 100%;
+}
+.cruiseText {
+  padding: 0.2rem;
+  grid-area: theText;
+}
+.cruiseText h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+.cruiseText p {
+  font-family: 'Piazzolla', serif;
+  margin-bottom: 0.1rem;
+}
+.cruiseButtonDiv {
+  padding: 0.2rem;
+  text-align: right;
+  grid-area: theButton;
+}
+.cruiseButton {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFD700;
+  outline: black !important;
+  border: 4px solid black;
+  font-size: 1.5rem;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+.agentArea .padding {
+  padding: 0.25rem;
+}
+.agentArea h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.agentArea h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+}
+.agentArea h4 {
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Piazzolla', serif;
+}
+.agentArea a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+.agentArea p {
+  margin-top: 0;
+  font-family: 'Piazzolla', serif;
+}
+.agentArea .quoteAttribute {
+  margin-top: 0;
+  margin-left: 0.2rem;
+}
+.agentArea .agentImage {
+  max-width: 100%;
+}
+.bookingBox form {
+  margin: 1%;
+}
+.bookingBox form h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+.bookingBox form label {
+  font-size: smaller;
+  font-style: italic;
+}
+.bookingBox form input,
+.bookingBox form select {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  margin-top: 0;
+  background-color: #f2f2f2bc;
+  border-radius: 6px;
+}
+.bookingBox form select {
+  width: 100%;
+  padding: 1px 2px;
+}
+.bookingBox form input {
+  width: 98%;
+}
+.bookingBox form .bookButton {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFD700;
+  outline: black !important;
+  border: 4px solid black;
+}
+@media screen and (min-width: 700px) {
+  .bookingBox form {
+    max-width: 66%;
+  }
+  .agentArea {
+    padding: 0.2rem;
+    max-width: 1200px;
+  }
+  .agentArea .agentImage {
+    max-width: 30rem;
+    float: right;
+  }
+  .cruiseGrid {
+    grid-template-areas: "theImage theText";
+  }
+  .cruiseButton {
+    background-color: #FFD700;
+    outline: black !important;
+    border-radius: 15px;
+    width: unset;
+  }
+  .cruiseText {
+    padding-top: 0;
+  }
+  .cruiseText h2 {
+    margin-top: 0;
+  }
+  .cruiseImage {
+    padding: 0 0.75rem 0.75rem 0.75rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .bookingBox form {
+    max-width: 33%;
+  }
+  .bookingBox form input,
+  .bookingBox form select {
+    font-size: 1.25rem;
+  }
+  .cruiseButton {
+    background-color: #FFD700;
+    padding: 0.28rem 0.2rem;
+    outline: black !important;
+    border: 3.5px solid black;
+    border-top: 3px solid black;
+    margin-left: -0.5rem;
+    margin-top: -0.2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  .cruiseText p {
+    margin-bottom: 0.75rem;
+  }
+  .cruiseImage {
+    grid-area: theImage;
+  }
+  .cruiseImage img {
+    max-width: 365px;
+  }
+}
+.aboutUsGrid,
+.findUs {
+  margin: 0 auto;
+  padding: 0.2rem 0 0.2rem 0.2rem;
+}
+.aboutUsGrid .contact a,
+.findUs .contact a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+.aboutUsGrid .contact h2,
+.findUs .contact h2 {
+  margin-bottom: 0;
+}
+.aboutUsGrid .contact p,
+.findUs .contact p {
+  margin: 0;
+}
+#findUsFrame {
+  height: 500px;
+  width: 100%;
+}
+.findUsFrameDiv {
+  margin: 0.5rem auto;
+  padding: 0.25rem 0.25rem 0.25rem 0.15;
+}
+.padding div.flexGrid {
+  display: grid;
+  gap: 15px;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+}
+.padding div.flexGrid figcaption {
+  font-size: 0.75rem;
+}
+.padding div.flexGrid figure {
+  margin: 0 auto 1rem auto;
+}
+.padding div.flexGrid figure img {
+  max-width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .aboutUsGrid div.newsletter,
+  .aboutUsGrid div.contact {
+    padding-left: 0.4rem;
+  }
+  .aboutUsGrid div.whyCabot {
+    padding-right: 0.2rem;
+    border-right: 2px dashed #262626de !important;
+  }
+  #findUsFrame {
+    height: 400px;
+  }
+  .findUsFrameDiv {
+    max-width: 80vw;
+  }
+  .padding div.flexGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .aboutUsGrid div.contact {
+    padding-left: 0.5rem;
+    border-left: 2px dashed #262626de !important;
+  }
+  .padding div.flexGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.serviceArea img {
+  width: 100%;
+  height: auto;
+}
