@@ -10,6 +10,20 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" />
     <title> Cabot Cruises <?php wp_title(); ?> </title>
+	
+	<script src="https://www.google.com/recaptcha/api.js?render=6Ld1mn0aAAAAANeTyB4rdL-wOJ3ZmiHLBG7gZe51"></script>
+	
+	<script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+   </script>
+	
 </head>
 
 <body>

@@ -845,20 +845,6 @@ div.screen-reader-response ul {
   font-family: 'Piazzolla', serif;
   margin-bottom: 1rem;
 }
-.news-content .news-short-content {
-  margin-bottom: 0.3rem;
-}
-.news-content a.news-more-link {
-  list-style: none;
-  text-emphasis: none;
-  text-decoration: none;
-  background-color: #FFD700;
-  outline: black !important;
-  border-radius: 15px;
-  padding: 0.15rem;
-  border: 2px solid black;
-  margin-top: 1rem !important;
-}
 .news_pagination {
   display: flex;
   justify-content: flex-start;
@@ -871,11 +857,15 @@ div.screen-reader-response ul {
   color: black;
   background-color: #FFD700;
   padding: 0.28rem 0.2rem;
+  outline: black !important;
   border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
   margin-left: 1rem;
 }
 .news_pagination span {
-  padding: 0.28rem 0.2rem 0.4rem 0.2rem;
+  padding: 0.28rem 0.2rem;
   border: 3.5px solid white;
   outline: black !important;
   border-top: 3px solid white;

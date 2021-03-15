@@ -1,0 +1,8 @@
+{
+    "watchFolder": "./cabotCruises_v2_html/wp-content/themes/theCabotTheme/less",   
+    "outputFolder": "./cabotCruises_v2_html/wp-content/themes/theCabotTheme/css",
+    "minified": false,   
+    "sourceMap": false,
+    "runOnce": false,
+    "enableJs": true
+}
