@@ -880,3 +880,23 @@ div.screen-reader-response ul {
   outline: black !important;
   border-top: 3px solid white;
 }
+.newsImgDiv {
+  width: 100%;
+  margin: 0 auto;
+}
+.newsImgDiv img {
+  width: 100%;
+  max-width: 600px;
+}
+@media screen and (min-width: 700px) {
+  .newsImgDiv img {
+    float: right;
+    padding-left: 0.4rem;
+  }
+}
+.newsContent {
+  padding: 0.4rem;
+}
+p.firstLine {
+  margin-top: 0;
+}
